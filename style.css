@@ -44,6 +44,13 @@
 	color: black;
 }
 
+.lesboutons, .lesalertes{
+	display: flex;
+	justify-content:space-evenly;
+	padding: var(--padding);
+	
+}
+
 
 .lacarteproduit{
     display: grid;
@@ -101,6 +108,7 @@ img{
 
 .description_mail {
     grid-area: b;
+	
 }
 
 .champ_mail {
@@ -114,18 +122,6 @@ img{
 	height: 15%;
 }
 
-
-.lesboutons {
-	display: flex;
-	justify-content:space-evenly;
-	padding: var(--padding);
-	
-}
-.lesalertes {
-	display: flex;
-	justify-content:space-evenly;
-	padding: var(--padding);
-}
 
 .b_form{
 	
