@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercice architexture css</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="grid">
+    <!-- Bouton-->
+    <div class="lesboutons">
+	<input class="bouton bouton_gauche" type="button" alt="ceci est un bouton" value="ceci est un bouton clic">
+	<input class="bouton bouton_droite" type="button" alt="ceci est un autre bouton" value="ceci est cet autre bouton clic">
+	</div>
+    
+    <hr>
+    <!-- Alert -->
+    <div class="lesalertes">
+<input type="submit" class="bouton alert alerte_1" value="Alerte 1">
+<script>
+        $(document).ready(function(){
+            $(".alerte_1").click(function(){
+                alert("Enfaite tout c'est bien passé c'était pour être sur que tu clic, tu peux continuer.");
+            });
+        });
+</script>
+    
+<input type="submit" class="bouton alerte alerte_2" value="Alerte 2">    
+<script>
+        $(document).ready(function(){
+            $(".alerte_2").click(function(){
+                alert("Trophée déverrouillé.");
+            });
+        });
+</script>
+    
+<input type="submit" class="bouton alerte alerte_3" value="Alerte 3">    
+<script>
+        $(document).ready(function(){
+            $(".alerte_3").click(function(){
+                alert("Essaie encore.");
+            });
+        });
+</script>
+    </div>
+      
+    <hr>
+      <!-- Carte produit -->
+    <div class="lacarteproduit">
+      
+    <div class="img"><img src="photo_architecture.jpeg" alt="photo"/></div> 
+        
+    <div class="titre"><article class="titre"><strong>Un fond d'écran incroyable</strong></article></div>
+        
+    <div class="description"><section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</section></div>
+        
+    <div class="bouton_bis"><input type="button" value="Acheter" class="b_form bouton bouton_produit"></div>
+        
+    </div>
+      
+     <hr>     
+            <!-- bloc inscription -->
+    <div class="inscription">
+        
+    <div class="titre_mail"><article class="titre"><strong>Une inscription incroyable</strong></article></div>
+        
+    <div class="description_mail"><section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</section></div>
+    
+    <div class="champ_mail"><input type="email" value="Votre email" ></div>
+        
+    <div class="bouton_mail"><input type="button" value="S'inscrire" class="b_form bouton"></div>
+        
+    </div>
+</div>        
+</body>
+</html>
